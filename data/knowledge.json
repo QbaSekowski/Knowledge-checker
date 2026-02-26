@@ -1,0 +1,130 @@
+[ {
+  "id" : 1,
+  "question" : "What is the capital of Germany?",
+  "answer" : "Berlin",
+  "category" : "Geography"
+}, {
+  "id" : 2,
+  "question" : "When did Christopher Columbus discover the Americas",
+  "answer" : "1492",
+  "category" : "History",
+  "lastAsked" : "2026-02-11T20:16:24",
+  "history" : [ false, true ]
+}, {
+  "id" : 3,
+  "question" : "Who is the director and writer of movie Star Wars 'A New Hope'?",
+  "answer" : "George Lucas",
+  "category" : "Culture",
+  "lastAsked" : "2026-01-30T16:51:36",
+  "history" : [ true ]
+}, {
+  "id" : 4,
+  "question" : "What is the largest ocean on Earth?",
+  "answer" : "Pacific Ocean",
+  "category" : "Geography"
+}, {
+  "id" : 5,
+  "question" : "What planet is known as the Red Planet?",
+  "answer" : "Mars",
+  "category" : "Science"
+}, {
+  "id" : 6,
+  "question" : "Who wrote the Harry Potter books?",
+  "answer" : "J.K. Rowling",
+  "category" : "Culture"
+}, {
+  "id" : 7,
+  "question" : "Which continent is Egypt in?",
+  "answer" : "Africa",
+  "category" : "Geography"
+}, {
+  "id" : 8,
+  "question" : "What is the value of Pi rounded to two decimal places?",
+  "answer" : "3.14",
+  "category" : "Science"
+}, {
+  "id" : 9,
+  "question" : "In which country did the Olympic Games originate?",
+  "answer" : "Greece",
+  "category" : "History"
+}, {
+  "id" : 10,
+  "question" : "What is H2O more commonly known as?",
+  "answer" : "Water",
+  "category" : "Science"
+}, {
+  "id" : 11,
+  "question" : "What is the capital city of France?",
+  "answer" : "Paris",
+  "category" : "Geography"
+}, {
+  "id" : 12,
+  "question" : "Who sailed across the Atlantic Ocean in 1492?",
+  "answer" : "Christopher Columbus",
+  "category" : "History"
+}, {
+  "id" : 13,
+  "question" : "What do bees make?",
+  "answer" : "Honey",
+  "category" : "Science"
+}, {
+  "id" : 14,
+  "question" : "Which country is famous for the pyramids?",
+  "answer" : "Egypt",
+  "category" : "Geography"
+}, {
+  "id" : 15,
+  "question" : "What is the capital city of Germany?",
+  "answer" : "Berlin",
+  "category" : "Geography"
+}, {
+  "id" : 16,
+  "question" : "Which country is famous for inventing pizza?",
+  "answer" : "Italy",
+  "category" : "Food & Cooking"
+}, {
+  "id" : 17,
+  "question" : "Which river flows through Budapest?",
+  "answer" : "Danube",
+  "category" : "Geography"
+}, {
+  "id" : 18,
+  "question" : "What is the capital city of Austria?",
+  "answer" : "Vienna",
+  "category" : "Geography"
+}, {
+  "id" : 19,
+  "question" : "Which famous composer was born in Salzburg, Austria?",
+  "answer" : "Wolfgang Amadeus Mozart",
+  "category" : "Culture"
+}, {
+  "id" : 20,
+  "question" : "What is the highest mountain in the Alps?",
+  "answer" : "Mont Blanc",
+  "category" : "Geography"
+}, {
+  "id" : 21,
+  "question" : "Which famous festival with masks is held in Venice?",
+  "answer" : "Carnival",
+  "category" : "Culture"
+}, {
+  "id" : 22,
+  "question" : "Which famous composer became deaf but continued to write music?",
+  "answer" : "Beethoven",
+  "category" : "Art"
+}, {
+  "id" : 23,
+  "question" : "What is the name of the musical instrument with black and white keys?",
+  "answer" : "Piano",
+  "category" : "Art"
+}, {
+  "id" : 24,
+  "question" : "Which bird is known for mimicking sounds and speech?",
+  "answer" : "Parrot",
+  "category" : "Nature"
+}, {
+  "id" : 25,
+  "question" : "What is the name of the colorful arc seen in the sky after rain?",
+  "answer" : "Rainbow",
+  "category" : "Nature"
+} ]

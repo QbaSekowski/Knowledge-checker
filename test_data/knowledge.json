@@ -1,0 +1,22 @@
+[ {
+  "id" : 1,
+  "category" : "Geography",
+  "question" : "What is the capital of Germany?",
+  "answer" : "Berlin",
+  "lastAsked" : null,
+  "history" : [ ]
+}, {
+  "id" : 2,
+  "category" : "History",
+  "question" : "When did Christopher Columbus discover the Americas",
+  "answer" : "1492",
+  "lastAsked" : "2026-02-11T20:16:24",
+  "history" : [ false, true, true ]
+}, {
+  "id" : 3,
+  "category" : "Culture",
+  "question" : "Who is the director and writer of movie Star Wars 'A New Hope'?",
+  "answer" : "George Lucas",
+  "lastAsked" : "2026-01-30T16:51:36",
+  "history" : [ false ]
+} ]
