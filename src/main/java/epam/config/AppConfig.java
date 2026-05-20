@@ -1,6 +1,10 @@
 package epam.config;
 
-import epam.logic.strategies.*;
+import epam.logic.strategies.AdaptiveStrategy;
+import epam.logic.strategies.FixedStrategy;
+import epam.logic.strategies.QuestionSelectionStrategy;
+import epam.logic.strategies.RandomStrategy;
+import epam.logic.strategies.SequentialStrategy;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

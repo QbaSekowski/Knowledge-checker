@@ -5,7 +5,6 @@ import epam.model.KnowledgeBank;
 import epam.model.KnowledgeElement;
 import epam.persistence.KnowledgeBankPersistence;
 import epam.ui.UserInterface;
-import org.springframework.stereotype.Component;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -13,6 +12,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
+import org.springframework.stereotype.Component;
 
 @Component
 public class KnowledgeCheckerRunner {
@@ -31,7 +31,8 @@ public class KnowledgeCheckerRunner {
 
     public void run() {
         KnowledgeBank bank = persistence.load();
-        List<KnowledgeElement> elements = bank.getElements() == null ? new ArrayList<>() : bank.getElements();
+        List<KnowledgeElement> elements = bank.getElements()
+                == null ? new ArrayList<>() : bank.getElements();
         Set<String> topics = elements.stream()
                 .map(KnowledgeElement::getTopic)
                 .filter(t -> t != null && !t.isBlank())
@@ -45,7 +46,8 @@ public class KnowledgeCheckerRunner {
             if ("/exit".equals(answer)) {
                 break;
             }
-            boolean correct = element.getAnswer() != null && element.getAnswer().equalsIgnoreCase(answer);
+            boolean correct = element.getAnswer()
+                    != null && element.getAnswer().equalsIgnoreCase(answer);
             if (element.getHistory() == null) {
                 element.setHistory(new ArrayList<>());
             }
