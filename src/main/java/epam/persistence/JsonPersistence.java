@@ -7,10 +7,6 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import epam.model.KnowledgeBank;
 import epam.model.KnowledgeElement;
 import epam.persistence.dto.KnowledgeElementDto;
-import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -20,6 +16,10 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 @Component
 public class JsonPersistence implements KnowledgeBankPersistence {
