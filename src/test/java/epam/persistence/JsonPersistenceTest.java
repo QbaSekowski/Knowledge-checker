@@ -1,12 +1,14 @@
 package epam.persistence;
 
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
+
 import epam.model.KnowledgeBank;
 import epam.model.KnowledgeElement;
-import org.junit.jupiter.api.Test;
-
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 class JsonPersistenceTest {
 
@@ -27,7 +29,8 @@ class JsonPersistenceTest {
         KnowledgeElement first = elements.get(0);
         assertAll("KnowledgeElement 1: " + first,
                 () -> assertEquals(1, first.getId(), "id"),
-                () -> assertEquals("What is the capital of Germany?", first.getQuestion(), "question"),
+                () -> assertEquals("What is the capital of Germany?",
+                        first.getQuestion(), "question"),
                 () -> assertEquals("Berlin", first.getAnswer(), "answer"),
                 () -> assertEquals("Geography", first.getTopic(), "topic"),
                 () -> assertNull(first.getLastAsked(), "lastAsked"),
@@ -38,24 +41,29 @@ class JsonPersistenceTest {
         KnowledgeElement second = elements.get(1);
         assertAll("KnowledgeElement 2: " + second,
                 () -> assertEquals(2, second.getId(), "id"),
-                () -> assertEquals("When did Christopher Columbus discover the Americas", second.getQuestion(), "question"),
+                () -> assertEquals("When did Christopher Columbus discover the Americas",
+                        second.getQuestion(), "question"),
                 () -> assertEquals("1492", second.getAnswer(), "answer"),
                 () -> assertEquals("History", second.getTopic(), "topic"),
                 () -> assertNotNull(second.getLastAsked(), "lastAsked"),
                 () -> assertEquals(3, second.getHistory().size(), "history size"),
-                () -> assertEquals(Boolean.FALSE, second.getHistory().get(0), "history first element")
+                () -> assertEquals(Boolean.FALSE, second.getHistory().get(0),
+                        "history first element")
         );
 
         // --- Third KnowledgeElement ---
         KnowledgeElement third = elements.get(2);
         assertAll("KnowledgeElement 3: " + third,
                 () -> assertEquals(3, third.getId(), "id"),
-                () -> assertEquals("Who is the director and writer of movie Star Wars 'A New Hope'?", third.getQuestion(), "question"),
+                () -> assertEquals("Who is the director "
+                                + "and writer of movie Star Wars 'A New Hope'?",
+                        third.getQuestion(), "question"),
                 () -> assertEquals("George Lucas", third.getAnswer(), "answer"),
                 () -> assertEquals("Culture", third.getTopic(), "topic"),
                 () -> assertNotNull(third.getLastAsked(), "lastAsked"),
                 () -> assertEquals(1, third.getHistory().size(), "history size"),
-                () -> assertEquals(Boolean.FALSE, third.getHistory().get(0), "history first element")
+                () -> assertEquals(Boolean.FALSE, third.getHistory().get(0),
+                        "history first element")
         );
     }
 }

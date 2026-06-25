@@ -1,9 +1,9 @@
 package epam.ui;
 
-import org.springframework.stereotype.Component;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.stream.Collectors;
+import org.springframework.stereotype.Component;
 
 @Component
 public class ConsoleUserInterface implements UserInterface {
@@ -18,7 +18,8 @@ public class ConsoleUserInterface implements UserInterface {
     public void printWelcome(Set<String> topics, int totalQuestions) {
         String topicsText = topics.stream().sorted().collect(Collectors.joining(", "));
         System.out.println("Welcome to the Knowledge Bank Application!");
-        System.out.println("This application will test your knowledge on the following topics: " + topicsText);
+        System.out.println("This application will test your knowledge on the following topics: "
+                + topicsText);
         System.out.println("Total questions in the knowledge bank: " + totalQuestions);
         System.out.println("You will be asked questions from various categories.");
         System.out.println("If you want to exit, type '/exit' as your answer.\n");

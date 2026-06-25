@@ -62,7 +62,8 @@ public class JsonPersistence implements KnowledgeBankPersistence {
             }
             return new KnowledgeBank(elements);
         } catch (IOException e) {
-            throw new IllegalStateException("Failed to load knowledge bank from: " + dataFilePath, e);
+            throw new IllegalStateException("Failed to load knowledge bank from: "
+                    + dataFilePath, e);
         }
     }
 
